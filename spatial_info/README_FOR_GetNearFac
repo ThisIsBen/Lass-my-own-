@@ -1,0 +1,21 @@
+# GetNearFac
+Once put the json file that contains all the near-factory-Device('near[mile].0.json') and a certain factoryID as args,
+this program can copy the csv files from airbox and lass folder (you should run DBData2csv.py first.)to an automatically created and updated folder named NearFacIDwhose whose names are listed to be near the input factoryID in the 'near[mile].0.json'file.
+
+Date Dec 13 2016
+
+## Format
+
+
+```
+	python GetNearFac.py [the json file that list all the near-factory-Device][factoryID]
+```
+
+## Execution
+
+
+```
+	python GetNearFac.py near3000.0.json factory98
+	//It means copy the Device csv files that is situated in the range of 3000 miles of factory98 and is listed in 'near3000.0.py' from airbox and lass folder.
+
+```

@@ -1,0 +1,12 @@
+
+Output a json file that contains all "FactoryID:[ID]" data
+
+Excution:
+python near_factory.py <meter>
+
+
+
+Example:
+python near_factory.py 3000
+
+
