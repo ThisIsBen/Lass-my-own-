@@ -73,7 +73,7 @@ Device_id: 28C2DDDD459D,no query result
 	```shell
 	$ python DBData2csv.py [source] [past time]
 		// [source] = [airbox / lass]
-		// [past time]= [H or h/D or d/W or w] is "optional" ,it indicates the past time:1hr,24hrs,1 week respectively.
+		// [past time]= [H or h/  [int number]D or [int number]d/  W or w] is "optional" ,it indicates the past time:1hr,24hrs,1 week respectively.
 		If you ignore this arg , the program will set up csv files to store all the history PM2.5 data for each device.
 	```
 
@@ -86,8 +86,15 @@ Device_id: 28C2DDDD459D,no query result
 	//set up csv files to store the PM2.5 data of the past 1 hour for each device.
 
 
-	$ python DBData2csv.py airbox D 
-	//set up csv files to store the PM2.5 data of the past 24 hour for each device.
+	$ python DBData2csv.py airbox 1D 
+	//set up csv files to store the PM2.5 data of the past 1 day for each device.
+
+	$ python DBData2csv.py airbox 2D 
+	//set up csv files to store the PM2.5 data of the past 2 days for each device.
+
+
+	$ python DBData2csv.py airbox 3D 
+	//set up csv files to store the PM2.5 data of the past 3 days for each device.
 
 	$ python DBData2csv.py airbox W 
 	//set up csv files to store the PM2.5 data of the past 1 week for each device.
