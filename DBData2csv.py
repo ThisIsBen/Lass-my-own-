@@ -100,7 +100,7 @@ def getPM25List(PM25List,DateList,HrList,MinList,arg_measurement,IDindex,IDList,
                 #check if the PM25 query result is empty,if yes,skip this one
                 PM25Query=str(PM25Query)
                 if PM25Query == 'ResultSet({})': 
-                    print("Device_id: " +IDList[IDindex]+",no query result")
+                    #print("Device_id: " +IDList[IDindex]+",no query result")
                     lackDataID=lackDataID+1
                     return
 
